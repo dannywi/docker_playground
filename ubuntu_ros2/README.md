@@ -12,7 +12,7 @@ docker run --rm -itp 6080:80 --name ub_ros2 ubuntu_ros2
 # GET PROMPT
 docker exec -it -w /root ub_ros2 /bin/bash
 
-# SETUP ROS ENV (in container
+# SETUP ROS ENV (in container)
 . /opt/ros/galactic/setup.bash
 
 # GET GUI IN BROWSER
