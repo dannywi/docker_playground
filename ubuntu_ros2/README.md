@@ -7,7 +7,7 @@ Useful commands
 docker build . -t ubuntu_ros2
 
 # RUN CONTAINER
-docker run --rm -itp 6080:80 --name ub_ros2 ubuntu_ros2
+docker run --rm -itp 6080:80 -v $(pwd):/home/widjad --name ub_ros2 ubuntu_ros2:latest
 
 # GET PROMPT
 docker exec -it -w /root ub_ros2 /bin/bash
